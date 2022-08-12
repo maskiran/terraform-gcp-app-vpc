@@ -1,3 +1,11 @@
+terraform {
+  required_providers {
+    google = {
+      source = "hashicorp/google"
+    }
+  }
+}
+
 locals {
   # prepare the list of vms per zone to look like a list of maps
   # [ 
