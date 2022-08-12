@@ -1,6 +1,8 @@
 locals {
   user_data = <<EOF
 #! /bin/bash
+curl -o /tmp/setup.sh https://raw.githubusercontent.com/maskiran/sample-web-app/main/ubuntu/setup_app.sh
+bash /tmp/setup.sh &> /tmp/setup.log
 EOF
 }
 
