@@ -50,6 +50,7 @@
       "id" = "subnet-id"
       "name" = "subnemt-name"
       "region" = "us-east1"
+    }
   }
   ```
 
