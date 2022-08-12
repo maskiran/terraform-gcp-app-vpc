@@ -7,7 +7,8 @@
 1. Add egress firewall rule to allow all traffic out
 1. Add a route to go the internet for the current ip (This is added in case you want to set a different default route via firewall instances etc)
 
-# Variables
+## Variables
+
 * `prefix` - Prefix used for all the resources, default `kiran-app`
 * `region` - GCP Region, default `us-east1`
 * `zones` - Availability zones in the above region, default `us-east1-b`
@@ -17,7 +18,8 @@
 * `vm_count_per_zone` - Number of VM instances per Zone, default 1
 * `project_id` - Project Id in which the resources are created. When this repo is used as a module, the root module must define the project and it's inherited. This is required only if this module is run as root
 
-# Outputs
+## Outputs
+
 * `vms` - A list of VMs, each item is a map, with all the details of the map
   ```
   [
@@ -51,7 +53,7 @@
   }
   ```
 
-# Running as a root module
+## Running as a root module
 
 ```
 git clone https://github.com/maskiran/terraform-gcp-app-vpc.git
@@ -60,7 +62,7 @@ mv provider provider.tf
 cp values-sample values
 ```
 
-# Using in another module
+## Using in another module
 
 Create a tf file with the following content
 
